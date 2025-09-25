@@ -1,7 +1,7 @@
 package chess_system.application;
 
 public class Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		
 	}
 
