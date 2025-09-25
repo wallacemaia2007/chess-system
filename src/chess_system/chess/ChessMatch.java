@@ -1,7 +1,6 @@
 package chess_system.chess;
 
 import chess_system.boardGame.Board;
-import chess_system.boardGame.BoardException;
 import chess_system.boardGame.Piece;
 import chess_system.boardGame.Position;
 import chess_system.chess.pieces.King;

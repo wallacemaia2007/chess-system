@@ -8,6 +8,11 @@ import chess_system.chess.ChessPosition;
 import chess_system.chess.Color;
 
 public class UI {
+	
+	public static void clearScreen() {
+		 System.out.print("\033[H\033[2J");
+		 System.out.flush();
+		}
 
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
