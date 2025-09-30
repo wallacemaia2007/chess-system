@@ -10,6 +10,7 @@ import chess_system.chess.pieces.Bishop;
 import chess_system.chess.pieces.King;
 import chess_system.chess.pieces.Knigth;
 import chess_system.chess.pieces.Pawn;
+import chess_system.chess.pieces.Queen;
 import chess_system.chess.pieces.Rook;
 
 public class ChessMatch {
@@ -127,6 +128,7 @@ public class ChessMatch {
 		placeNewPiece('b', 2, new Pawn(board, Color.WHITE));
 		placeNewPiece('c', 2, new Pawn(board, Color.WHITE));
 		placeNewPiece('c', 1, new Bishop(board, Color.WHITE));
+		placeNewPiece('d', 1, new Queen(board, Color.WHITE));
 		placeNewPiece('d', 2, new Pawn(board, Color.WHITE));
 		placeNewPiece('e', 2, new Pawn(board, Color.WHITE));
 		placeNewPiece('f', 2, new Pawn(board, Color.WHITE));
@@ -143,6 +145,7 @@ public class ChessMatch {
 		placeNewPiece('b', 7, new Pawn(board, Color.BLACK));
 		placeNewPiece('c', 7, new Pawn(board, Color.BLACK));
 		placeNewPiece('c', 8, new Bishop(board, Color.BLACK));
+		placeNewPiece('d', 8, new Queen(board, Color.BLACK));
 		placeNewPiece('d', 7, new Pawn(board, Color.BLACK));
 		placeNewPiece('e', 7, new Pawn(board, Color.BLACK));
 		placeNewPiece('f', 7, new Pawn(board, Color.BLACK));
