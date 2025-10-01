@@ -38,10 +38,14 @@ public class Main {
 				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
 				if (capturedPiece != null)
 					captured.add(capturedPiece);
-				
-				if(chessMatch.getPromoted() != null) {
-					System.out.println("Enter piece for promotion (B/Q/N/R");
-					String type = sc.nextLine();
+
+				if (chessMatch.getPromoted() != null) {
+					System.out.println("Enter piece for promotion (B/Q/N/R)");
+					String type = sc.nextLine().toUpperCase();
+					while (!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q")) {
+						System.out.println("Invalid type. Please enter a piece for promotion (B/Q/N/R)");
+						type = sc.nextLine().toUpperCase();
+					}
 					chessMatch.replacePromotedPiece(type);
 				}
 
