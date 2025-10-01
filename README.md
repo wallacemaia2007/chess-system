@@ -43,4 +43,4 @@ src/
 
 ---
 
-Desenvolvido como projeto de estudo de POO em Java.
+Projeto desenvolvido durante o curso de Java do Prof. Nelio Alves como estudo de Programação Orientada a Objetos.
